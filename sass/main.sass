@@ -1,0 +1,677 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'QuattrocentoSans', Sans-serif, Sans-serif
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.title-line
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		width: 66px
+		height: 2px
+		background: $blue
+		
+		margin-top: -2px
+		margin-right: 20px
+	&:after
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		width: 66px
+		height: 2px
+		background: $blue
+		
+		margin-top: -2px
+		margin-left: 20px
+
+
+
+
+// ===================================	my css ===================================
+
+
+
+
+header
+	line-height: 72px
+	.site-logo
+		
+		.img-responsive
+			display: inline-block
+	
+	.header-top
+		
+		text-align: right
+
+		.call-us
+			font-size: 15px
+			margin-right: 60px
+			display: inline-block
+			
+			a
+				text-decoration: none
+				border-right: 1px solid #d0d3d5
+				padding-right: 10px
+				font-weight: 700
+				i.fa.fa-phone
+					margin-right: 5px
+			span
+				padding-left: 10px
+
+		.email-us
+			display: inline-block
+			font-size: 15px
+			a
+				text-decoration: none
+				border-right: 1px solid #d0d3d5
+				padding-right: 10px
+				font-weight: 700
+				i.fa.fa-envelope
+					margin-right: 5px
+			span
+				padding-left: 10px
+
+/* menu */
+
+
+.nav-wrapper
+
+	position: relative
+	position: sticky
+	top: 0
+	margin-bottom: -19px
+
+	z-index: 9999
+	
+	.site-nav
+		
+		background-color: #000000
+		line-height: 60px
+	
+		.horizontal-nav
+			float: left
+
+			//line-height: 1
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 45px
+				a
+					display: block
+					font-size: 17px
+					padding: 20px 0
+					border: 2px solid transparent
+					color: #ffffff
+					text-decoration: none
+					line-height: 1
+					&.current-menu-item
+						color: $blue
+						border-bottom: 2px solid $blue
+						font-size: 17px
+					&:hover
+						color: $blue
+						border-bottom: 2px solid $blue
+		.button-menu
+			float: right
+			//line-height: 1
+			.btn.btn-primary
+				text-transform: uppercase
+				border-radius: 0
+
+
+			//float: left
+
+.main-nav-trigger
+	display: none
+	font-size: 45px
+	line-height: 1
+	color: #ffffff
+	float: right
+	cursor: pointer
+	transition: color .3s ease-in-out
+	&:hover
+		color: $blue
+
+
+
+
+		//site-nav
+/* /menu */
+
+
+
+
+
+/* Banner */
+
+.banner
+	width: 100%
+	min-height: 587px
+	background-image: url("../img/bg-banner.jpg")
+
+	.banner-slogan
+		text-align: center
+
+		padding-top: 72px
+	
+		.banner-logo-link
+			display: inline-block
+			//height: auto
+			//max-width: 100%
+
+			text-decoration: none
+			cursor: pointer
+			
+			margin-bottom: 72px
+
+		.banner-title
+			h1
+				text-align: center
+				font-size: 45px
+				/* font-family: Myriad Pro Regular */
+				color: #ffffff
+
+				margin-bottom: 50px
+		.banner-description
+			p
+				text-align: center
+				font-size: 20px
+				font-family: 'QuattrocentoSans', Sans-serif
+				color: #ffffff
+
+/* /.Banner */
+
+
+
+
+/* certified */
+.certified
+	margin-top: 50px
+	margin-bottom: 68px
+	text-align: center
+
+	.certified-body
+		
+			.certifield-title
+				/* width: 100% */
+				font-size: 27px
+				color: #000000
+				font-weight: 700
+				font-family: OpenSans
+			.btn.btn-outline-primary
+				font-size: 18px
+				padding: 10px 19px 10px 18px/* !important */
+				border-radius: 0
+
+				margin-top: 33px
+				margin-bottom: 38px
+				
+			.certified-description
+				color: #474747
+				font-family: 'QuattrocentoSans', Sans-serif
+
+				span
+					font-weight: 700
+
+/* /.certified */
+
+/* .shoose */
+.shoose
+	position: relative
+	/* width: 100% */
+	/* min-height: 672px */
+	background-image: url("../img/bg-shoose2.jpg")
+	background-position: top center
+	background-repeat: no repeat
+	background-size: cover
+	/* нормальна анстройка background-image */
+	.overlay
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(25, 39, 50, 0.8)
+
+
+	.shoose-section-title
+		text-align: center
+		color: #ffffff
+		font-size: 35px
+		font-family: 'QuattrocentoSans', Sans-serif
+		
+		padding-top: 50px
+		padding-bottom: 74px
+		&.title-line
+
+
+	.shoose-section-description
+		text-align: center
+		color: #ffffff
+		font-size: 18px
+		line-height: 21px
+		font-family: 'QuattrocentoSans', Sans-serif
+
+		padding-bottom: 60px
+
+.shoose
+	.shoose-item
+		background-color: #ffffff
+		padding: 25px 25px 45px 35px
+		line-height: 18px
+		margin-bottom: 65px
+		img
+			float: left
+			padding-right: 10px
+		.item-title
+			font-size: 15px
+			text-transform: uppercase
+			line-height: 45px
+			font-weight: 700
+		.item-body
+			min-height: 230px
+			overflow: hidden
+
+			color: #474747
+			font-size: 13px
+			padding-top: 20px
+			padding-bottom: 11px
+		.item-bottom
+
+			min-height: 55px
+			overflow: hidden
+
+			font-size: 13px
+			font-weight: 700
+
+/* /.shoose */
+
+/* /.ld */
+
+.ld
+	margin-bottom: 80px
+	.ld-section-title
+		text-align: center
+		color: #000000
+		font-size: 35px
+		font-family: 'QuattrocentoSans', Sans-serif
+		
+		padding-top: 72px
+		padding-bottom: 78px
+		&.title-line
+
+.ld
+	.ld-item
+		margin-bottom: 60px
+		.ld-title-item
+			position: relative
+			display: inline-block
+			text-transform: uppercase
+			color: #474747
+			font-size: 27px
+			font-family: 'QuattrocentoSans', Sans-serif
+
+			//display: inline-block
+			margin-bottom: 20px
+			//border-bottom: 1px solid #dedede
+			line-height: 40px
+			z-index: 12
+
+			-webkit-box-shadow: inset 0 0 0 rgba(0, 146, 222, 0), 0 2px 0 rgba(0, 146, 222, 1)
+			box-shadow: inset 0 0 0 rgba(0, 146, 222, 0), 0 2px 0 rgba(0, 146, 222, 1)
+
+		.title-line-bottom
+			&:after
+				display: inline-block
+				position: absolute
+				content: ''
+				top: 40px
+				width: 97%
+				height: 2px
+				background-color: #dedede
+					
+
+		.ld-item-description
+			font-size: 18px
+			font-family: 'QuattrocentoSans', Sans-serif
+			line-height: 21px
+			p
+
+		.ld-item-images
+
+/* /.ld */
+
+
+/* testemonials */
+
+.testemonials
+	position: relative
+	z-index: 222
+	background-image: url("../img/bg-testamonials3.jpg")
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	.overlay
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(25, 39, 50, 0.8)
+		//z-index: 1
+		
+	.testemonials-section-title
+		z-index: 3
+		text-align: center
+		color: #ffffff
+		font-size: 35px
+		font-family: 'QuattrocentoSans', Sans-serif
+
+		padding-top: 60px
+		padding-bottom: 48px
+		&.title-line
+
+.testemonials
+	.slid
+		z-index: 3
+		.testemonials-item
+			margin-right: 20px
+			//max-width: 700px
+			text-align: center
+			background-color: #ffffff
+			padding: 60px 35px 45px 37px
+
+			margin-bottom: 72px
+			.testemonials-item-title
+				position: relative
+				display: inline-block
+				text-align: center
+				color: #474747
+				font-size: 18px
+				font-weight: 700
+				font-family: 'QuattrocentoSans', Sans-serif
+				
+				-webkit-box-shadow: inset 0 0 0 rgba(0, 146, 222, 0), 0 2px 0 rgba(0, 146, 222, 1)
+				box-shadow: inset 0 0 0 rgba(0, 146, 222, 0), 0 2px 0 rgba(0, 146, 222, 1)
+				
+			.testemonials-item-body
+				.candies-open
+					display: block
+					float: left
+				p
+					clear: both
+					font-size: 15px
+					line-height: 15px
+					font-style: italic
+					
+					padding-left: 38px
+					padding-right: 38px
+				.candies-close
+					float: right
+
+.slick-slide
+	max-width: 540px
+	margin-right: 15px
+
+.slick-prev
+	left: -25px
+
+
+
+/* /.testemonials */
+
+
+
+
+/* #lean */
+
+.lean
+	.lean-section-title
+		text-align: center
+		color: #474747
+		font-size: 35px
+		font-family: 'QuattrocentoSans', Sans-serif
+
+		padding-top: 80px
+		padding-bottom: 50px
+		&.title-line
+
+.lean
+	.lean-item
+		//
+		box-sizing: content-box
+
+		margin-bottom: 77px
+		//border-bottom: 3px solid transparent
+		&:hover
+			
+			border-bottom: 3px solid $blue
+			margin-bottom: -3px
+		.lean-item-image
+			width: 100%
+		.lean-item-title
+			min-height: 70px
+			font-family: 'QuattrocentoSans', Sans-serif
+			font-size: 18px
+			line-height: 22px
+			font-weight: 700
+			margin-bottom: 0
+			
+			border: 1px solid #ededed
+			padding: 20px 20px 16px 20px
+
+			
+			
+		.lean-item-body
+			
+			min-height: 266px
+			overflow: hidden
+
+			font-size: 15px
+			line-height: 23px
+			font-family: 'QuattrocentoSans', Sans-serif
+
+			padding: 22px 20px 20px 14px
+			border-left: 1px solid #dedede
+			border-right: 1px solid #dedede
+
+			border-bottom: 1px solid #dedede
+
+/* /#lean*/
+
+
+/* #get-started*/
+.get-started
+	background-color: #f8f8f8
+	.get-started-section-title
+		
+		text-align: center
+		color: #000000
+		font-size: 35px
+		line-height: 25px
+		font-family: 'QuattrocentoSans', Sans-serif
+
+		padding-top: 60px
+		padding-bottom: 10px
+		&.title-line
+
+	.get-started-section-slogan
+		text-align: center
+		font-size: 18px
+		line-height: 20px
+		color: #474747
+
+		margin-bottom: 37px
+
+.get-started
+	
+	.form-wrapper
+
+		background-color: #ffffff
+		padding: 39px 38px 24px 38px
+		position: relative
+		text-align: center
+
+		margin-bottom: 56px
+		#myform
+			input[type="text"],
+			input[type="email"],
+			
+				display: block
+				padding: 12px 20px 15px 16px
+				margin-bottom: 13px
+				border: 1px solid #d1d1d1
+				outline: none;
+				//vertical-align: middle
+				min-width: 100%
+				font-size: 15px
+				color: #d1d1d1
+				background: #ffffff
+				box-sizing: border-box
+
+			::-webkit-input-placeholder
+				color:#d1d1d1
+			::-moz-placeholder
+				color:#d1d1d1
+			:-moz-placeholder
+				color:#d1d1d1
+			:-ms-input-placeholder
+				color:#d1d1d1
+			select
+				display: block
+				padding: 12px 20px 15px 16px
+				margin-bottom: 13px
+				border: 1px solid #d1d1d1
+				outline: none;
+				//vertical-align: middle
+				min-width: 100%
+				font-size: 15px
+				color: #d1d1d1
+				background: #ffffff
+				box-sizing: border-box
+
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+
+				color: #B3B7BC
+				border: 1px solid $blue
+			select
+				&:focus
+					color: #B3B7BC
+					border: 1px solid $blue
+
+			textarea
+				display: block
+				padding: 12px 20px 15px 16px
+				margin-bottom: 13px
+				border: 1px solid #d1d1d1
+				outline: none;
+				//vertical-align: middle
+				min-width: 100%
+				font-size: 15px
+				color: #d1d1d1
+				background: #ffffff
+				&:focus
+					color: #B3B7BC
+					border: 1px solid $blue
+
+			input[type="checkbox"]
+				float: left
+
+			label.check
+				width: 90%
+			
+				color: #9b9b9b
+				font-size: 15px
+				line-height: 18px
+
+				margin-left: 20px
+			.btn.btn-primary
+				text-transform: uppercase
+				padding: 14px 20px 14px 23px
+				background-color: $blue
+				border-radius: 0
+				margin-top: 20px
+				&:hover
+					background-color: #0074b3
+
+/* /#get-started*/
+
+
+/* footer */
+footer
+	text-align: center
+	background-color: #16242e
+	
+
+	.footer-title
+		margin: 35px 0 25px 0
+		font-size: 18px
+		line-height: 21px
+		color: #ffffff
+		//border-bottom: 1px solid #404b53
+		p
+
+		.btn.btn-primary
+			border-radius: 0
+			background-color: $blue
+			&:hover
+				transition: none
+				background-color: #0074b3
+
+	hr
+		border-top: 1px solid #404b53
+	
+
+	.copyright
+		color: #ffffff
+		font-size: 12px
+		line-height: 25px
+
+
+
+
+/* /footer */
+
+
+@import "media" // Always at the end
